@@ -1,0 +1,52 @@
+/*--==IMPORT==--*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/*--==GENERAL STYLIZATION==--*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(255, 196, 0),rgb(255, 255, 0));
+}
+
+
+/*--==CONTAINER==--*/
+.container{
+    background-color: rgb(245, 245, 245);
+    width: 450px;
+    border-radius: 5px;
+    padding: 25px 30px;
+}
+
+/*--==CONTENT==--*/
+.container h2{
+    text-align: center;
+    font-size: 28px;
+    color: rgb(0, 81, 255);
+}
+.container textarea{
+    margin-top: 13px;
+    font-size: 16px;
+    width: 100%;
+    height: 59px;
+    max-height: 340px;
+    padding: 15px;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    border: 1px solid #ffbb00;
+}
+textarea:is(:focus, :valid){
+    border: #ffc400 solid 2px;
+    padding: 15px;
+}
+textarea::-webkit-scrollbar{
+    width: 0;
+}
